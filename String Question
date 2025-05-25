@@ -59,3 +59,24 @@ public static void LenString(String s)
         }
         Console.WriteLine($"String Length is {count}");
     }
+
+toggle each characters in a string
+
+ public static void ToggleString(String s)
+    {
+        char[] ch = s.ToCharArray();
+
+        for(int i = 0; i< ch.Length;i++)
+        {
+            if (ch[i] >= 'a' && ch[i] <= 'z')
+            {
+                ch[i] = Convert.ToChar(ch[i] - 32);
+            }
+            else if(ch[i] >= 'A' && ch[i] <= 'Z')
+            {
+                ch[i] = Convert.ToChar(ch[i] + 32);
+            }
+        }
+        s = new string(ch);
+        Console.Write(s);
+    }
