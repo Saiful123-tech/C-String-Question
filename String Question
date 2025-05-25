@@ -96,3 +96,19 @@ count the number of vowels in a string
         }
         Console.WriteLine($"Total Count Vowel is {count}");
     }
+
+Remove the vowels from a String
+
+private static void RemoveVowel(string s)
+    {
+        for(int i=0;i< s.Length; i++)
+        {
+            if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u'
+           && s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U')
+            {
+                s = s.Remove(i, 1);
+            }
+            
+        }
+        Console.WriteLine(s);
+    }
