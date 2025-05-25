@@ -112,3 +112,30 @@ private static void RemoveVowel(string s)
         }
         Console.WriteLine(s);
     }
+
+Check if the given string is Palindrome or not
+
+ public static void CheckPalindromeString(string s)
+    {
+        int i = 0;
+        int j = s.Length - 1;
+        bool check = true;
+        while (i < j)
+        {
+            if (s[i] != s[j])
+            {
+                check = false;
+            }
+            i++;
+            j--;
+        }
+
+        if (!check)
+        {
+            Console.WriteLine("String is not Palindrome");
+        }
+        else
+        {
+            Console.WriteLine("String is Palindrome");
+        }
+    }
