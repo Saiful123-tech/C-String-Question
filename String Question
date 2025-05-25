@@ -23,4 +23,19 @@ public class HelloWorld
         CheckVowelOrConstant(s);
 
     }
+
+check whether a character is alphabet or not
+
+ public static void CheckAlphabetCharacter(char ch)
+    {
+        if (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z')
+        {
+            Console.WriteLine("Character is Aphabet");
+        }
+        else
+        {
+            Console.WriteLine("Character is not Alphabet");
+
+        }
+    }
 }
