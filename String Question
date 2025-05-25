@@ -139,3 +139,39 @@ Check if the given string is Palindrome or not
             Console.WriteLine("String is Palindrome");
         }
     }
+
+Print the given string in reverse order
+
+ public static void ReverseString(string s)
+    {
+        int i = 0; ;
+        int j = s.Length - 1;
+        char[] chars = s.ToCharArray();
+        while (i < j)
+        {
+            char temp = chars[i];
+            chars[i] = chars[j];
+            chars[j] = temp;
+            i++;
+            j--;
+        }
+        s = new string(chars);
+        Console.WriteLine(s);
+    }
+
+remove all character from string except alphabets
+
+public static void RemoveExceptAplhabet(string s)
+    {
+        int i = 0;
+        while(i < s.Length)
+        {
+            if (!(s[i] >= 'A' && s[i] <= 'Z' || s[i] >= 'a' && s[i] <= 'z'))
+            {
+                s = s.Remove(i, 1);
+                continue;
+            }
+            i++;
+        }
+        Console.WriteLine($"Remove Alphabet {s}");
+    }
