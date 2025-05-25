@@ -46,3 +46,16 @@ public static void GetAsciValue(char ch)
     {
         Console.WriteLine($"Character {ch} Asci Value is {Convert.ToInt64(ch)}");
     }
+
+
+calculate the length of string without using length() function
+
+public static void LenString(String s)
+    {
+        int count = 0;
+        foreach(var item in s)
+        {
+            count++;
+        }
+        Console.WriteLine($"String Length is {count}");
+    }
