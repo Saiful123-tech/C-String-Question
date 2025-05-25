@@ -175,3 +175,20 @@ public static void RemoveExceptAplhabet(string s)
         }
         Console.WriteLine($"Remove Alphabet {s}");
     }
+
+remove spaces from a string
+
+
+public static void RemoveSpacesString(string s)
+    {
+        int i = 0;
+        while (i < s.Length)
+        {
+            if (s[i] == ' ') 
+            {
+                s = s.Remove(i, 1);
+                continue;
+            }
+            i++;
+        }
+    }
