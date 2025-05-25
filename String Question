@@ -39,3 +39,10 @@ check whether a character is alphabet or not
         }
     }
 }
+
+print ASCII value of a character
+A to Z = 65 – 90,  a to z = 97 – 122 Digits 48 – 57 and rest is remaining
+public static void GetAsciValue(char ch)
+    {
+        Console.WriteLine($"Character {ch} Asci Value is {Convert.ToInt64(ch)}");
+    }
