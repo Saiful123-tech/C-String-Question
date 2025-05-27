@@ -208,4 +208,19 @@ count the sum of numbers in a string
         Console.WriteLine($"Sum Count is {sum}");
     }
 
+capitalize the first and last letter of each word of a string
 
+   public static void firstLastWordCapital(string s)
+    {
+        char[] ch = s.ToCharArray();
+        for (int i = 0; i < ch.Length; i++)
+        {
+            if ((i == 0 || i == ch.Length - 1 || ch[i+1]  == ' ' || ch[i-1] == ' ') && ch[i] >= 'a' && ch[i] <= 'z')
+            {
+
+                ch[i] = Convert.ToChar(ch[i] - 32);
+            }
+        }
+
+        Console.WriteLine($"New String is {new String(ch)}");
+    }
