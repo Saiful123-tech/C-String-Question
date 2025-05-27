@@ -192,3 +192,20 @@ public static void RemoveSpacesString(string s)
             i++;
         }
     }
+
+count the sum of numbers in a string
+
+ public static void countSum(string s)
+    {
+       var num = Convert.ToInt64(s);
+        long sum = 0;
+        while (num != 0)
+        {
+           long rem = num % 10;
+            sum += rem;
+            num = num / 10;
+        }
+        Console.WriteLine($"Sum Count is {sum}");
+    }
+
+
