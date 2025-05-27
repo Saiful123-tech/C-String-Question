@@ -269,3 +269,22 @@ find non repeating characters in a string
         }
         Console.WriteLine(ts);
     }
+
+
+Each Word Reverse String
+
+ public static void EachWordReverse(string s)
+    {
+        List<string> ans = s.Split(' ').ToList();
+        string ts = "";
+        for(int i = 0; i<ans.Count; i++)
+        {
+           ts = ts + ReverseString(ans[i]);
+           if(ans.Count()-1 == i)
+            {
+                continue;
+            }
+           ts = ts + " ";
+        }
+        Console.WriteLine(ts);
+    }
