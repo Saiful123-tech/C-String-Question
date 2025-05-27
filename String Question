@@ -224,3 +224,23 @@ capitalize the first and last letter of each word of a string
 
         Console.WriteLine($"New String is {new String(ch)}");
     }
+
+calculate the frequency of characters in a string
+
+   public static void countOccurence(string s)
+    {
+        var dict = new Dictionary<char, int>();
+        foreach(var item in s)
+        {
+            if (dict.ContainsKey(item))
+            {
+                dict[item]++;
+                continue;
+            }
+            dict.Add(item, 1);
+        }
+        foreach(var item in dict)
+        {
+            Console.WriteLine($"{item.Key} {item.Value}");
+        }
+    }
